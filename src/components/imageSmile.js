@@ -14,9 +14,10 @@ import Img from "gatsby-image"
  */
 
 const Image = ({ style, imgStyle }) => {
+  style = { ...style, borderRadius: "50%" }
   const data = useStaticQuery(graphql`
     query {
-      placeholderImage: file(relativePath: { eq: "ico web.png" }) {
+      placeholderImage: file(relativePath: { eq: "unseurious.png" }) {
         childImageSharp {
           fluid(maxWidth: 300) {
             ...GatsbyImageSharpFluid
