@@ -62,7 +62,7 @@ const IndexPage = () => {
               <div className="main-pane">
                 <div className="desc">
                   <p>
-                    Currently working in <br />
+                    Currently working at <br />
                     <a href="https://prospace.io">
                       ProSpace Analytics Pte Ltd
                     </a>{" "}
