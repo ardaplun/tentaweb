@@ -14,9 +14,13 @@ const NotFoundPage = () => (
         height: "100vh",
       }}
     >
-      <div class="card-scene" onClick={() => window.location.replace("/")}>
+      <div
+        class="card-scene"
+        onClick={() => window.location.replace("/")}
+        style={{ height: "90%" }}
+      >
         <div id="card" class="card">
-          <div class="card-face card-backing">
+          <div class="card-face card-backing" style={{ height: "90%" }}>
             <div class="back-main">
               <p className="name">I think you are lost</p>
               <p className="short-desc">
