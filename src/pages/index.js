@@ -18,9 +18,11 @@ const IndexPage = () => {
 
   const flipCardHandler = () => {
     let card = document.getElementById("card")
+    // let isTouchEnabled = 'ontouchstart' in window
 
     if (card.classList.contains("card--flipped")) {
       card.classList.add("card--unflip")
+
       setTimeout(function() {
         card.classList.remove("card--flipped", "card--unflip")
       }, 500)
@@ -44,7 +46,7 @@ const IndexPage = () => {
           <div id="card" className="card" onClick={flipCardHandler}>
             <div
               className="card-face card-backing"
-              style={{ height: "90%" }}
+              style={{ height: "100%" }}
               onMouseEnter={() => setIsHappy(true)}
               onMouseLeave={() => setIsHappy(false)}
             >
@@ -58,7 +60,7 @@ const IndexPage = () => {
                 </p>
               </div>
             </div>
-            <div className="card-face card-front" style={{ height: "90%" }}>
+            <div className="card-face card-front" style={{ height: "100%" }}>
               <div className="main-pane">
                 <div className="desc">
                   <p>
@@ -73,6 +75,7 @@ const IndexPage = () => {
                 <div className="link-container">
                   <img
                     src={fb}
+                    style={{height:'23px'}}
                     alt="my facebook profile"
                     onClick={() =>
                       window.open("https://web.facebook.com/yulian.wardana")
@@ -85,6 +88,7 @@ const IndexPage = () => {
                   />
                   <img
                     src={email}
+                    style={{height:'23px'}}
                     alt="my personal email"
                     onClick={() =>
                       window.open(
@@ -103,6 +107,7 @@ const IndexPage = () => {
                   />
                   <img
                     src={github}
+                    style={{height:'24px'}}
                     alt="my online cv's but in project code"
                     onClick={() => window.open("https://github.com/ardaplun")}
                   />
