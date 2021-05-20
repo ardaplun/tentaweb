@@ -65,11 +65,11 @@ const IndexPage = () => {
                 <div className="desc">
                   <p>
                     Currently working at <br />
-                    <a href="https://prospace.io">
-                      ProSpace Analytics Pte Ltd
+                    <a href="https://prixa.ai">
+                      prixa.ai
                     </a>{" "}
                     as a <br />
-                    Tech Team Lead and Frontend Developer
+                    Sr. Frontend Engineer
                   </p>
                 </div>
                 <div className="link-container">
